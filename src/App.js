@@ -1,15 +1,23 @@
-import logo from "./logo.svg";
-import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Portfolio from "./components/Portfolio";
+import SocialLinks from "./components/SocialLinks";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="text-3xl font-bold">React X Tailwind</h1>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <NavBar />
+            <Home />
+            <About />
+            <Portfolio />
+            <Experience />
+            <Contact />
+            <SocialLinks />
+        </>
+    );
 }
 
 export default App;
